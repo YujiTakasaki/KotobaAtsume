@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/HappyEndScene.unity
+    guid: 2457c54fce8c14e5997df9b54ec5b1b5
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 31311fe144c114bd598c5159b630c2b1
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/QuizScene.unity
+    guid: 2b58d697076274425918af66b8855880
+  - enabled: 1
+    path: Assets/Scenes/FieldScene.unity
+    guid: a06a99bedf73a4cb79d4b2daa67936cc
   m_configObjects: {}

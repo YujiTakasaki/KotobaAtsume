@@ -151,6 +151,8 @@ GameObject:
   - component: {fileID: 365413725}
   - component: {fileID: 365413724}
   - component: {fileID: 365413727}
+  - component: {fileID: 365413729}
+  - component: {fileID: 365413728}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -171,11 +173,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 224.00206, y: 35.706905}
+  scrollPos: {x: 349.28616, y: 33.094193}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.98650014
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -184,7 +186,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 365413722}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 365413728}
   variables: []
   description: 
   stepPause: 0
@@ -237,9 +240,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
+    x: 65.97751
     y: 70
-    width: 111.83476
+    width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -492,7 +495,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -20.786177
     y: 184.9058
-    width: 92.57475
+    width: 92
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -502,6 +505,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 365413727}
+  - {fileID: 365413729}
   suppressAllAutoSelections: 0
 --- !u!114 &365413721
 MonoBehaviour:
@@ -544,7 +548,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 187.45192
     y: 185.93216
-    width: 86.492645
+    width: 86
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -556,6 +560,7 @@ MonoBehaviour:
   - {fileID: 365413726}
   - {fileID: 365413725}
   - {fileID: 365413724}
+  - {fileID: 365413728}
   suppressAllAutoSelections: 0
 --- !u!114 &365413723
 MonoBehaviour:
@@ -690,6 +695,40 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &365413728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365413707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  targetObject: {fileID: 833834558}
+  methodName: toBadEndScene
+  delay: 0
+--- !u!114 &365413729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365413707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 18
+  indentLevel: 0
+  targetObject: {fileID: 833834558}
+  methodName: toHappyEndScene
+  delay: 0
 --- !u!1 &676839591
 GameObject:
   m_ObjectHideFlags: 1
@@ -786,6 +825,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &833834558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 833834560}
+  - component: {fileID: 833834559}
+  m_Layer: 0
+  m_Name: QuizSceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &833834559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833834558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e20db85c3e8c458687071793ad8f9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &833834560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833834558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 550.2534, y: 107.495285, z: 2571.7043}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1199068354
 GameObject:
