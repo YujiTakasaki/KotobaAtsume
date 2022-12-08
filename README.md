@@ -1,5 +1,6 @@
 # 概要
-メンターハッカソンで作成するゲームです。
+2day ハッカソンで作成したゲームです。
+Demo: https://unityroom.com/games/kotodama-akuma
 
 # 構造
 Scene について
